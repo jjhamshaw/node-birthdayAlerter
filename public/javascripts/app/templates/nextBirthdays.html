@@ -1,5 +1,8 @@
 <div id="nextBirthdays" class="jumbotron">
   <h2>Who's birthday is it next?!</h2>
   <ul class="birthdayList">
+    <% for (var i = 0; i < birthdays.length; i++) { %>
+      <h3><%= birthdays[i] %></h3>
+    <% } %>
   </ul>
 </div>
