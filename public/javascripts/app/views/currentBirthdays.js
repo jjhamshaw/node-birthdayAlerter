@@ -2,7 +2,7 @@ define(function(require){
   var $ = require('jquery'),
       Backbone = require('backbone'),
       _ = require('underscore'),
-      Template = _.template(require('text!../templates/nextBirthday.html'));
+      Template = _.template(require('text!../templates/currentBirthdays.html'));
 
   return Backbone.View.extend({
     initialize: function(){

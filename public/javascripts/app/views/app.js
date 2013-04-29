@@ -2,8 +2,8 @@ define(function(require) {
   var $ = require('jquery'),
       Backbone = require('backbone'),
       _ = require('underscore'),
-      Template = _.template(require('text!../templates/bdaylist.html')),
-      NextBirthdayView = require('./nextBirthday')
+      NextBirthdayView = require('./nextBirthdays')
+      CurrentBirthdayView = require('./currentBirthdays')
       ;
 
   return Backbone.View.extend({
@@ -11,7 +11,7 @@ define(function(require) {
     initialize: function() {
       this.nextBirthday = new NextBirthdayView();
 
-      this.$el.append(this.nextBirthday.render());
+      this.$el.append(this.nextBirthday.render());  
       //this.$el.html(Template({message:'blah'}));
 
     },
