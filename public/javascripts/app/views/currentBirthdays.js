@@ -6,7 +6,8 @@ define(function(require){
 
   return Backbone.View.extend({
     initialize: function(){
-      this.$el.html(Template());
+      var bdays = ['first', 'second', 'third'];
+      this.$el.html(Template({birthdays: bdays}));
     },
     render: function(){
       return this.$el;
